@@ -4,6 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/scrape.js",
+    "dev": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,5 +15,10 @@
   "description": "",
   "dependencies": {
     "puppeteer": "^24.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "@types/puppeteer": "^5.4.7",
+    "typescript": "^5.8.3"
   }
 }
